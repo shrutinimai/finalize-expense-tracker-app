@@ -3,6 +3,9 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const cors = require('cors');
 const helmet = require('helmet'); 
+const morgan =require('morgan')
+const fs = require('fs');
+
 
 require('dotenv').config();
 
@@ -20,6 +23,9 @@ const leaderboardRoutes = require('./routes/leaderboardroutes');
 const orderRoutes = require('./routes/orderRoutes');
 
 const app = express();
+const accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), { flags: 'a' });
+
+app.use(morgan('combined', { stream: accessLogStream }));
 
 app.use(cors()); 
 
@@ -88,7 +94,7 @@ app.get('/password/resetpassword/:id', (req, res) => {
 
 sequelize.sync()
     .then(() => {
-        console.log('Database synced successfully.');
+        console.log('database synced successfully.');
         const port = process.env.PORT || 3000;
         app.listen(port, () => {
             console.log(`Server running on port ${port}`);
