@@ -1,0 +1,33 @@
+{
+  "name": "final_expense-app_backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.817.0",
+    "@cashfreepayments/cashfree-js": "^1.0.5",
+    "all": "^0.0.0",
+    "axios": "^1.9.0",
+    "bcrypt": "^6.0.0",
+    "cashfree-pg": "^5.0.8",
+    "cashfree-pg-sdk-nodejs": "^2.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "json2csv": "^6.0.0-alpha.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.14.1",
+    "nodemailer": "^7.0.3",
+    "sequelize": "^6.37.7",
+    "sib-api-v3-sdk": "^8.5.0",
+    "uuid": "^11.1.0"
+  }
+}

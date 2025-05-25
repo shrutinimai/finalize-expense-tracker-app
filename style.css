@@ -1,0 +1,132 @@
+body {
+    background-color: #dcb5cc;
+    font-family: Arial, sans-serif;
+}
+
+#app {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #9b6060;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+th, td {
+    border: 1px solid #caafaf;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #6bf06f;
+    color: white;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+#monthlyTable tbody tr.salary {
+    background-color: #70d4e1;
+}
+
+#yearlyTable tfoot td {
+    color: green;
+}
+
+#downloadButton {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#downloadButton:disabled {
+    background-color: #d7baba;
+    cursor: not-allowed;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #dfcdf9;
+}
+
+#app {
+    margin-top: 50px;
+}
+
+input {
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
+}
+textarea {
+    margin: 2px;
+    padding: 10px;
+    width: 80%;
+}
+.date{
+    margin: 5px;
+    padding: 10px;
+    width: 20%;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color:  rgb(230, 192, 54);
+    border-radius: 10%;
+    color: #f4f4f4;
+}
+.options{
+    margin-top: 10px;
+    padding: 10px;
+    width: 65%;
+}
+h3 {
+    margin-top: 0;
+    background-color: rgb(18, 21, 174);
+    padding: 20px;
+    color: #f4f4f4;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+  }
+
+button:hover {
+    background-color: rgb(237, 158, 158);
+}
+.salary-row {
+    background-color: #dff0d8;
+    color: #3c763d; 
+}
+.insights-head{
+    background-color: rgb(33, 48, 9);
+    padding: 20px;
+    color: #f4f4f4;
+    margin-top: 0px;
+}
+
+#downloadLinksContainer a {
+    display: block;
+    margin-bottom: 5px;
+}
