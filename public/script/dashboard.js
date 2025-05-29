@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
             const newClickListener = async () => {
                 try {
-                    const response = await axios.post(`http://localhost:5500/api/create-order`, {
+                    const response = await axios.post(`http://localhost:3000/api/create-order`, {
                         orderId: Math.random().toString(36).substring(2, 15), 
                         orderAmount: 499, 
                         orderCurrency: 'INR',
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             if (orderId) {
                 console.log(`Checking payment status for orderId: ${orderId}`);
-                const response = await axios.get(`http://localhost:5500/api/payment-status/${orderId}`);
+                const response = await axios.get(`http://localhost:3000/api/payment-status/${orderId}`);
                 console.log("Response from payment status check:", response);
 
                 alert(`Payment status: ${response.data.status}`);
